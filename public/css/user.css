@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0ecec;
+}
+
+header {
+  background-color: chocolate;
+  color: #fff;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav nav ul {
+  border-bottom: 2px solid #fff;
+}
+.bottom-nav nav ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.bottom-nav nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.bottom-nav nav ul li:hover {
+  background-color: #fff;
+}
+.bottom-nav nav ul li:hover a {
+  color: chocolate;
+}
+.bottom-nav nav ul .active {
+  background-color: #fff;
+}
+.bottom-nav nav ul .active a {
+  color: chocolate;
+}
+
+.info-section {
+  position: relative;
+  top: -40px;
+  background-color: #fff;
+  min-height: 400px;
+  padding: 20px 20px;
+}
+
+.results-list {
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.results-list .result {
+  border: 1px solid chocolate;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background-color: chocolate;
+  transition: 0.5s all;
+}
+.results-list .result a {
+  text-decoration: none;
+  color: #fff;
+}
+.results-list .result:hover {
+  border: 1px solid chocolate;
+  background-color: #fff;
+}
+.results-list .result:hover a {
+  color: chocolate;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background-color: #fff;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
